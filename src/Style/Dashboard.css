@@ -1,0 +1,97 @@
+/* src/Style/Dashboard.css */
+
+.dashboard-container {
+    display: flex;                      
+    flex-direction: column;             
+    align-items: center;                
+    padding: 20px;                     
+    background-color: #f4f4f4;         
+  }
+  
+  .dashboard-content {
+    width: 100%;                       
+    max-width: 1200px;                
+    background-color: #fff;           
+    border-radius: 8px;               
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;                    
+    margin: 20px 0;                   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for scaling and shadow */
+  }
+  
+  .dashboard-content:hover {
+    transform: scale(1.02);            /* Slight scale effect on hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  h1 {
+    text-align: center;                
+    color: #333;                      
+    font-size: 32px;                  
+    margin-bottom: 20px;              
+    opacity: 0;                       /* Start invisible */
+    transform: translateY(-20px);     /* Start position for fade-in */
+    animation: fadeIn 0.5s ease forwards; /* Fade-in effect */
+  }
+  
+  .dashboard-content > div {
+    margin-bottom: 20px;               
+  }
+  
+  /* Styles for the NavBar */
+  .navbar {
+    background-color: #007bff;        
+    padding: 10px;                     
+    color: white;                      
+    text-align: center;                
+    transition: background-color 0.3s; /* Animation for background color change */
+  }
+  
+  .navbar:hover {
+    background-color: #0056b3;         /* Darker shade on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .dashboard-content {
+      padding: 15px;                  
+    }
+  
+    h1 {
+      font-size: 24px;                
+    }
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;                      /* Fade to visible */
+      transform: translateY(0);        /* End position */
+    }
+  }
+  
+  /* Button Animations */
+  button {
+    background-color: #007bff;        /* Primary button color */
+    color: white;                      
+    border: none;                      
+    padding: 10px 20px;               
+    border-radius: 5px;               
+    cursor: pointer;                   
+    transition: background-color 0.3s, transform 0.3s; /* Button hover effect */
+  }
+  
+  button:hover {
+    background-color: #0056b3;        /* Darker shade on hover */
+    transform: translateY(-2px);      /* Slight upward movement */
+  }
+  
+  /* Table Row Animation */
+  table tr {
+    transition: background-color 0.3s; /* Row hover effect */
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;         /* Light background on hover */
+  }
+  

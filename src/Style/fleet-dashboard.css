@@ -1,0 +1,53 @@
+/* FleetOverviewDashboard.css */
+
+.fleet-overview {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .fleet-overview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .low-battery-header {
+    color: red;
+    transition: color 0.3s ease;
+  }
+  
+  .low-battery-header:hover {
+    color: darkred;
+  }
+  
+  .low-battery-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .low-battery-item {
+    background-color: #ffebee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.2s;
+  }
+  
+  .low-battery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+/* src/Style/RealTimeStatus.css */
+
+.real-time-status {
+    background-color: #ffffff;          /* White background for contrast */
+    border-radius: 8px;                 /* Rounded corners for a modern look */
+    padding: 20px;                       /* Padding for content spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;                 /* Space below the component */
+    transition: transform 0.3s ease;    /* Smooth transition for hover effect */
+}
+
+.real-time-status h3 {
+    color: #333;                        /* Dark gray for the heading */
+    text-align: center;                 /* Centered heading */
+    margin-bottom: 15px;                /* Space below the heading */
+}
+
+.real-time-status ul {
+    list-style-type: none;               /* Remove bullet points */
+    padding: 0;                          /* Remove default padding */
+    margin: 0;                           /* Remove default margin */
+}
+
+.real-time-status li {
+    display: flex;                       /* Use flexbox for alignment */
+    justify-content: space-between;     /* Space between the model and battery */
+    padding: 10px;                      /* Padding for list items */
+    border-bottom: 1px solid #ddd;      /* Light border for separation */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.real-time-status li:hover {
+    background-color: #f0f8ff;          /* Light blue background on hover */
+    transform: translateY(-2px);        /* Lift effect on hover */
+}
+
+.low-battery {
+    color: red;                          /* Red color for low battery vehicles */
+    font-weight: bold;                   /* Bold text for emphasis */
+}
+
+.charging {
+    color: green;                        /* Green color for charging vehicles */
+    font-weight: bold;                   /* Bold text for emphasis */
+}
